@@ -554,6 +554,10 @@ video {
   --tw-contain-style:  ;
 }
 
+.visible {
+  visibility: visible;
+}
+
 .absolute {
   position: absolute;
 }
@@ -616,6 +620,22 @@ video {
 
 .left-\[50rem\] {
   left: 50rem;
+}
+
+.right-\[10rem\] {
+  right: 10rem;
+}
+
+.right-\[50rem\] {
+  right: 50rem;
+}
+
+.right-\[5rem\] {
+  right: 5rem;
+}
+
+.right-\[8rem\] {
+  right: 8rem;
 }
 
 .z-10 {
@@ -919,6 +939,18 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-4 {
+  width: 1rem;
+}
+
+.w-\[20px\] {
+  width: 20px;
+}
+
+.w-\[70\%\] {
+  width: 70%;
 }
 
 .max-w-lg {
@@ -1333,6 +1365,10 @@ video {
 
 .pt-\[20px\] {
   padding-top: 20px;
+}
+
+.pl-4 {
+  padding-left: 1rem;
 }
 
 .text-center {

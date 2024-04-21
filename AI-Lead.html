@@ -97,6 +97,20 @@
                     About 
                   </a>
                   <a
+                    href="#page3"
+                    class="inline-flex shrink-0 items-center gap-2 border-b-2 border-transparent px-1 pb-4 text-[18px] font-medium text-white hover:border-orange-300 hover:text-orange-500
+                    aria-current="
+                  >
+                    Curriculum
+                  </a>
+                  <a
+                    href="#ratings"
+                    class="inline-flex shrink-0 items-center gap-2 border-b-2 border-transparent px-1 pb-4 text-[18px] font-medium text-white hover:border-orange-300 hover:text-orange-500
+                    aria-current="
+                  >
+                    Course Reviews
+                  </a>
+                  <a
                     href="#"
                     id = "certificate" class="inline-flex shrink-0 items-center gap-2 border-b-2 border-transparent px-1 pb-4 text-[18px] font-medium text-white hover:border-orange-300 hover:text-orange-500"
                   >
@@ -104,7 +118,7 @@
                     Certifications
                   </a>
         
-                  <div id="dropdown" class="hidden absolute left-[42rem]">
+                  <div id="dropdown" class="hidden absolute right-[8rem]">
                     <div class="inline-flex items-center overflow-hidden rounded-md border bg-white">
                     </div>
                   
@@ -141,20 +155,6 @@
                     </div>
                   </div>
                   <a
-                    href="#page3"
-                    class="inline-flex shrink-0 items-center gap-2 border-b-2 border-transparent px-1 pb-4 text-[18px] font-medium text-white hover:border-orange-300 hover:text-orange-500
-                    aria-current="
-                  >
-                    Curriculum
-                  </a>
-                  <a
-                    href="#"
-                    class="inline-flex shrink-0 items-center gap-2 border-b-2 border-transparent px-1 pb-4 text-[18px] font-medium text-white hover:border-orange-300 hover:text-orange-500
-                    aria-current="
-                  >
-                    Course Reviews
-                  </a>
-                  <a
                     href="Blog.html"
                     class="inline-flex shrink-0 items-center gap-2 border-b-2 border-transparent px-1 pb-4 text-[18px] font-medium text-white hover:border-orange-300 hover:text-orange-500
                     aria-current="
@@ -168,47 +168,52 @@
 
       <div id="main">
         <div id="page1">
+          <!--
+Heads up! 👋
 
-          <section
-          class="relative bg-[url(https://static.vecteezy.com/system/resources/previews/026/973/824/original/glowing-ai-chipset-processor-with-scattered-text-background-digital-technology-wallpaper-of-artificial-intelligence-futuristic-cpu-circuit-concept-in-the-neon-light-style-vector.jpg)] bg-cover bg-center bg-no-repeat"
-          >
-          <div
-            class="absolute inset-0 bg-gradient-to-l from-transparent to-white "
-          ></div>
-          
-          <div
-            class="relative mx-auto max-w-screen-xl px-4 py-32  lg:flex lg:h-screen lg:items-center lg:px-8"
-          >
-            <div class="max-w-xl text-center ltr:text-left rtl:text-right">
-              <h1 class=" font-extrabold text-5xl">
-                Get Upto
-          
-                <strong class="block font-extrabold text-rose-700"> 100 % of Scholarship</strong>
-              </h1>
-          
-              <p class="mt-4 max-w-lg text-xl/relaxed">
-                Offer valid till 30th April
-              </p>
-          
-              <div class="mt-8 flex flex-wrap gap-4 text-center mx-12">
-                <a
-                  href="Starttest.html"
-                  class="block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 "
-                >
-                  Start Test
-                </a>
-          
-                <a
-                  href="Schedulelater.html"
-                  class="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-rose-600 shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500"
-                >
-                  Schedule Later
-                </a>
-              </div>
-            </div>
-          </div>
-          </section>
-        </div>
+This component comes with some `rtl` classes. Please remove them if they are not needed in your project.
+-->
+
+<section
+class="relative bg-[url('./banner.svg')] bg-cover bg-center bg-no-repeat"
+>
+<div
+class="absolute inset-0 bg-gradient-to-l from-transparent to-white "
+></div>
+
+<div
+class="relative mx-auto max-w-screen-xl px-4 py-32  lg:flex lg:h-screen lg:items-center lg:px-8"
+>
+<div class="max-w-xl text-center ltr:text-left rtl:text-right">
+<h1 class=" font-extrabold text-5xl">
+Get Upto
+
+<strong class="block font-extrabold text-rose-700"> 100 % of Scholarship</strong>
+</h1>
+
+<p class="mt-4 max-w-lg text-xl/relaxed">
+Offer valid till 15th May
+</p>
+
+<div class="mt-8 flex flex-wrap gap-4 text-center mx-12">
+<a
+  href="Starttest.html"
+  class="block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 "
+>
+  Start Test
+</a>
+
+<a
+  href="Schedulelater.html"
+  class="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-rose-600 shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500"
+>
+  Schedule Later
+</a>
+</div>
+</div>
+</div>
+</section>
+      </div>
         <div id="pag2">
             <h1 class="text-[36px] text-[#074D8D] p-4 font-bold">Welcome to AI Lead: Your Gateway to Non-Technical AI Leadership!</h1>
             <div class="mx-4 mb-4" id="overview">
@@ -449,31 +454,31 @@
                       <div class="px-4 pb-4">
                         <ol>
                                     
-                          <li><span>PDF Downloadable Study Materials:</span></li> 
+                          <li><span class="font-bold">PDF Downloadable Study Materials:</span></li> 
                           <p> - Comprehensive study guides and materials available for download.</p>
                            <br>
                       <li>
-                        <span>Recorded Videos:</span></li>
+                        <span class="font-bold">Recorded Videos:</span></li>
                         <p>  - Access to a library of recorded instructional videos for flexible, self-paced learning.</p>
                       <br>
-                        <li><span>Personalized E-books:</span></li>
+                        <li><span class="font-bold">Personalized E-books:</span></li>
                            <p>- E-books tailored to your specific program, providing a personalized learning experience.</p>
                       <br>
-                       <li><span>Real-World Worksheet-Based Learning:</span></li> 
+                       <li><span class="font-bold">Real-World Worksheet-Based Learning:</span></li> 
                            <p>- Practical application through industry-relevant worksheets for hands-on experience.</p>
                       <br>
-                      <li><span>State-of-the-Art Lab-Based Practice Code:</span></li>  
+                      <li><span class="font-bold">State-of-the-Art Lab-Based Practice Code:</span></li>  
                            <p>- Utilize cutting-edge lab resources for practical coding exercises and application development.</p>
                       <br>
-                       <li><span>Online Community:</span></li> 
+                       <li><span class="font-bold">Online Community:</span></li> 
                            <p>- Engage with a vibrant online community, connect with fellow AI enthusiasts, and participate in intellectually stimulating discussions.</p>
                       <br>
-                        <li><span>Doubt Solving Support:</span></li>
+                        <li><span class="font-bold">Doubt Solving Support:</span></li>
                            <p>- Access a 24*7 online forum to post queries and receive prompt responses, including text-based and on-call support.</p>
                       
                       <br>
                            <li>
-                        <span>Free Lifetime Newsletter Subscription:</span></li>
+                        <span class="font-bold">Free Lifetime Newsletter Subscription:</span></li>
                        </ol>
                            <p>- Stay informed with the latest industry trends through a complimentary lifetime subscription to our newsletter</p>
                       </div>
@@ -485,18 +490,18 @@
         
                   <ul class="mt-6 space-y-4 text-sm">
                     <li>
-                      <a href="#" class="text-gray-700 transition hover:opacity-75"> Registration Fee CAID </a>
+                      <a href="AIDpayment.html" class="text-gray-700 transition hover:opacity-75"> Registration Fee CAID </a>
                     </li>
         
                     <li>
-                      <a href="#" class="text-gray-700 transition hover:opacity-75"> Registration Fee CAIL</a>
+                      <a href="AILpayement.html" class="text-gray-700 transition hover:opacity-75"> Registration Fee CAIL</a>
                     </li>
         
                     <li>
-                      <a href="#" class="text-gray-700 transition hover:opacity-75"> Terms & Conditins</a>
+                      <a href="terms&conditions.html" class="text-gray-700 transition hover:opacity-75"> Terms & Conditins</a>
                     </li>
                     <li>
-                      <a href="#" class="text-gray-700 transition hover:opacity-75"> Privacy Policy</a>
+                      <a href="privact.html" class="text-gray-700 transition hover:opacity-75"> Privacy Policy</a>
                     </li>
                   </ul>
                 </div>
@@ -504,17 +509,17 @@
                 <div class="flex-col">
                   <p class="font-medium text-lg text-gray-900">Certification</p>
         
-                  <ul class="mt-6 space-y-4 text-sm">
+                  <ul class="mt-6 space-y-4 text-sm ">
                     <li>
-                      <a href="#" class="text-gray-700 transition hover:opacity-75"> AI Leadership Program </a>
+                      <a href="AI-Developer.html" class="text-gray-700 transition hover:opacity-75"> Certified Artificial Intelligence Develpor </a>
                     </li>
         
                     <li>
-                      <a href="#" class="text-gray-700 transition hover:opacity-75"> AI Developer Program </a>
+                      <a href="AI-Lead.html" class="text-gray-700 transition hover:opacity-75"> Certified Artificial Intelligence Manager</a>
                     </li>
         
                     <li>
-                      <a href="#" class="text-gray-700 transition hover:opacity-75"> AI Lead Program </a>
+                      <a href="AILeadership.html" class="text-gray-700 transition hover:opacity-75"> Certified Artificial Intelligence Leader </a>
                     </li>
                   </ul>
                 </div>
