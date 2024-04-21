@@ -4,6 +4,14 @@ const capsule = document.getElementById('capsule')
 const cap_dropdown = document.getElementById('cap-dropdown')
 let hoverTimeout;
 
+
+const menu = document.getElementById('hamburger')
+      const menu_bar = document.getElementById('menu-bar')
+      menu.addEventListener('click', function(){
+        menu_bar.classList.toggle("hidden")
+      })
+
+
  certificate.addEventListener('mouseover', function()
   {     clearTimeout(hoverTimeout); 
     dropdown.classList.remove("hidden")
@@ -33,7 +41,7 @@ let hoverTimeout;
           
         }
       })
-
+      
       gsap.to("#header", {
         scrollTrigger: {
           trigger: "#header", // Trigger when the header is in view

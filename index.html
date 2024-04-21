@@ -26,7 +26,7 @@
           </div>
          
           <div>
-            <p class="mt-7 relative text-[1rem] text-[#074D8D] font-bold">Email: Info@calai.org</p>
+            <p class="mt-7 relative text-[1rem] text-[#074D8D] font-bold md:hidden">Email: Info@calai.org</p>
           </div>
             </div>
             <div  class="block md:hidden">
@@ -169,57 +169,83 @@
                   </a>  
                 </nav>
               </div>
+              
+            </div>
+
+            <div class="hidden md:block">
+              <div id="mobile navbar" class="bg-blue-600 flex p-2 justify-between ">
+                <img  id="hamburger" class="h-[30px]" src="menu-line.svg" alt="">
+                <p class="text-[20px] text-white font-bold md:text-[15px] text-center">Get Upto 100% of Scholarship Offer valid till 15th May</p>
+                <button class="bg-black text-white p-1 test-[15px]"><a href="Starttest.html">Start Test</a></button>
+              </div>
+            </div>
+            
+            <div id="menu-bar" class="text-center text-blue-700 font-bold hidden" >
+              <ul class="">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#page3"></a>Certifications</li>
+                <li><a href="#page2">About Us</a></li>
+                <li><a href="#footer">FAQs</a></li>
+                <li><a href="Blog.html"></a>Blogs</li>
+                <li><a href="terms&conditions.html">Terms&Conditions</a></li>
+                <li><a href="privact.html">Privacy Policy</a></li>
+              </ul>
             </div>
       </div>
  
         <div class="" id="main">
-            <div id="page1">
-                <!--
+          <div id="page1">
+            <!--
   Heads up! 👋
-
+  
   This component comes with some `rtl` classes. Please remove them if they are not needed in your project.
--->
-
-<section
-class="relative bg-[url('./banner.svg')] bg-cover bg-center bg-no-repeat"
->
-<div
+  -->
+  
+  <section
+  class="relative bg-[url('./banner.svg')] w-full bg-cover bg-center bg-no-repeat md:h-[150px]"
+  >
+  <div
   class="absolute inset-0 bg-gradient-to-l from-transparent to-white "
-></div>
-
-<div
-  class="relative mx-auto max-w-screen-xl px-4 py-32  lg:flex lg:h-screen lg:items-center lg:px-8"
->
-  <div class="max-w-xl text-center ltr:text-left rtl:text-right">
-    <h1 class=" font-extrabold text-5xl">
-      Get Upto
-
-      <strong class="block font-extrabold text-rose-700"> 100 % of Scholarship</strong>
-    </h1>
-
-    <p class="mt-4 max-w-lg text-xl/relaxed">
-      Offer valid till 15th May
-    </p>
-
-    <div class="mt-8 flex flex-wrap gap-4 text-center mx-12">
-      <a
-        href="Starttest.html"
-        class="block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 "
-      >
-        Start Test
-      </a>
-
-      <a
-        href="Schedulelater.html"
-        class="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-rose-600 shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500"
-      >
-        Schedule Later
-      </a>
-    </div>
+  ></div>
+  
+  <div
+  class="relative mx-auto max-w-screen-xl px-4 py-32 md:hidden  "
+  >
+  <div class="max-w-xl text-center ltr:text-left rtl:text-right  md:text-[20px]">
+  <h1 class=" font-extrabold text-5xl">
+  Get Upto
+  
+  <strong class="block font-extrabold text-rose-700"> 100 % of Scholarship</strong>
+  </h1>
+  
+  <p class="mt-4 max-w-lg text-xl/relaxed">
+  Offer valid till 15th May
+  </p>
+  
+  <div class="mt-8 flex flex-wrap gap-4 text-center mx-12">
+  <a
+    href="Starttest.html"
+    class="block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 "
+  >
+    Start Test
+  </a>
+  
+  <a
+    href="Schedulelater.html"
+    class="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-rose-600 shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500"
+  >
+    Schedule Later
+  </a>
+  
   </div>
-</div>
-</section>
-            </div>
+  </div>
+  <div class="relative ml-[50rem] mb-[8rem]">
+    <h2 class="bg-yellow-400 w-[500px] text-center text-[30px] p-4 font-bold  ">Get Upto 100 % of ScholarShip</h2>
+  </div>
+  </div>
+  
+  </section>
+        </div>
             <div id="page2">
                 <h1 class="text-[28px] font-bold text-[#074D8D] p-5 mx-8">About CalAI
                 </h1>
