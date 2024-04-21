@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CalAI-AI Leader</title>
+    <title>CalAI-AI Developer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="overflow-x-hidden">
@@ -29,7 +29,7 @@
                   <button  class="absolute p-1 h-[28px] text-[18px] right-0 bg-[#CBA135] font-bold ">$999
                   </button>
                 <div class="flex flex-col text-center gap-3">
-                  <h1 class="text-[#074D8D] text-xl font-semibold lg:text-[18px]  "><a href="">AI Leadership</a></h1>
+                  <h1 class="text-[#074D8D] text-[16px] w-[250px] font-semibold lg:text-[18px]  "><a href="">Certified Artificial Intelligence Leader (CAIL<sup>TM</sup>)</a></h1>
                   <p class="text-center px-2">An emerging leadership program offering a holistic, strategic implementation of AI across sectors</p>
                 </div>
                 <div class="flex text-[14px] justify-evenly mt-4 px-4">
@@ -48,7 +48,7 @@
                   <button  class="absolute p-1 h-[28px] text-[18px] right-0 bg-[#CBA135] font-bold ">$699
                   </button>
                 <div class="flex flex-col text-center gap-3">
-                  <h1 class="text-[#074D8D] text-lg text-center  font-semibold lg:text-[18px] "><a href="">AI Developer Program</a></h1>
+                  <h1 class="text-[#074D8D] text-[16px] w-[250px] font-semibold lg:text-[18px]  "><a href="">Certified Artificial Intelligence Developer (CAID<sup>TM</sup>)</a></h1>
                   <p class="text-cente px-2">
                     Enhance AI expertise with cutting-edge modules validated by top subject matter experts for optimal proficiency</p>
                 </div>
@@ -68,7 +68,7 @@
                   <button  class="absolute p-1 h-[28px] text-[18px] right-0 bg-[#CBA135] font-bold ">$499
                   </button>
                 <div class="flex flex-col text-center gap-3">
-                  <h1 class="text-[#074D8D] text-lg text-center mx-9 font-semibold lg:text-[18px] "><a href="">AI Lead Program</a></h1>
+                  <h1 class="text-[#074D8D] text-[16px] w-[250px] font-semibold lg:text-[18px]  "><a href="">Certified Artificial Intelligence Manager (CAIM<sup>TM</sup>)</a></h1>
                   <p class="text-center px-2">
                     Enhance AI expertise with cutting-edge modules validated by top subject matter experts for optimal proficiency</p>
                 </div>
@@ -434,10 +434,24 @@
     ChatGPT Prompt Engineering
  </option> -->
 </select>
+<p class="text-center text-[0.8rem] w-[300px] ml-5"><span>Note:</span>CalAI respects your privacy, and your data is 100% secured with us. We are not sharing your data with any third party vendor.
+</p>
 <br>
 <button class="bg-black text-white w-[200px] text-lg font-bold mx-auto">Submit</button>
             </form>
             </div>
+            <div id="thank-you" class="hidden" >
+              <div  class=" absolute p-5 flex flex-col top-[150px] left-[300px] bg-white justify-center items-center w-[700px] gap-5 md:top-[200px] md:left-0 md:w-full " >
+                <div class="flex">
+                  <img class="h-[80px]" src="Cal_ai_orign-removebg-preview.png" alt="">
+                  <p class="relative top-[-8px] left-[-20px] text-[55px] font-light">&vert;</p>
+                  <h1 class = "relative top-5 text-[#074D8D] text-[25px] font-bold md:text-[18px] ">California Artificial Intelligence Institute</h1>
+                </div>
+                <p class="text-[2rem] text-center font-semibold md:text-[0.8rem]">Thank you for providing your details. Our academic counselor will contact you shortly.</p>
+                <button class="bg-[#074D8D] text-white text-[1.1rem] font-semibold p-3 "><a href="">Click here to Home</a></button>
+              </div>
+            </div>
+            
         
 </body>
 <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
@@ -457,6 +471,8 @@ const firebaseConfig = {
   var registertFormDB = firebase.database().ref("registertForm");
 
   const form=document.querySelector('form')
+  let thankyou = document.getElementById("thank-you")
+
   
   form.addEventListener('submit',function(e){
 e.preventDefault();
@@ -468,14 +484,15 @@ var phoneNumber = getElementVal("phoneNumber")
 // var formdate = getElementVal("date")
 var dateobj = new Date()
 let date = dateobj.toString();
-// let thankyou=document.querySelector(".thankyou")
+
 saveForm(name,email,country,phoneNumber,course,date)
 // document.getElementById("brochure").click()
 
 // console.log(name,email,country,phoneNumber,course);
 form.reset()
-// document.getElementById('test').click()
-// thankyou.style.display="block"
+thankyou.classList.remove("hidden")
+
+
     })
 
 
