@@ -1959,6 +1959,10 @@ video {
     gap: 1.25rem;
   }
 
+  .md\:overflow-x-hidden {
+    overflow-x: hidden;
+  }
+
   .md\:p-2 {
     padding: 0.5rem;
   }
